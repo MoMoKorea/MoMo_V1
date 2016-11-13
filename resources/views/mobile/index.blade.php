@@ -1,4 +1,6 @@
-<?php include('header.php'); ?>
+@extends('mobile.header')
+
+@section('content')
 
     <div class="grobal_body">
 
@@ -13,4 +15,4 @@
 
     </script>
 
-<?php include('footer.php'); ?>
+@stop

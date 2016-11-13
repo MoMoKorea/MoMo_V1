@@ -1,4 +1,6 @@
-<?php include('header.php'); ?>
+@extends('mobile.header')
+
+@section('content')
 
 <div class="position_r">
     <div class="detail_top" style="background-image: url('/img/detail/detail_top_ex01.png')"></div>
@@ -81,5 +83,4 @@
     </div>
 </div>
 
-
-<?php include('footer.php'); ?>
+@stop

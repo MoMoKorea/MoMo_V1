@@ -1,5 +1,6 @@
-<?php include('header.php'); ?>
+@extends('mobile.header')
 
+@section('content')
 <div>
     <img title="당신의 위치는 어디인가요?" src="../img/location/local_map.png">
 </div>
@@ -50,9 +51,4 @@
         </h4>
     </a>
 </div>
-
-
-
-
-
-<?php include('footer.php'); ?>
+@stop

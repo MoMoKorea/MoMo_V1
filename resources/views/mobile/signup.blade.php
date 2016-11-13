@@ -1,5 +1,6 @@
-<?php include('header.php'); ?>
+@extends('mobile.header')
 
+@section('content')
 <style>
     body{
         background: -webkit-gradient(linear, left top, left bottom, from(#FCC351), to(#EF6B00)) fixed;
@@ -43,6 +44,5 @@
         </h4>
     </a>
 </div>
+@stop
 
-
-<?php include('footer.php'); ?>

@@ -1,4 +1,6 @@
-<?php include('header.php'); ?>
+@extends('mobile.header')
+
+@section('content')
 
     <div class="login_body">
 
@@ -22,5 +24,4 @@
         </a>
     </div>
 
-
-<?php include('footer.php'); ?>
+@stop

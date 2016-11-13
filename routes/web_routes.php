@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('login', 'Web\MainController@getLogin');
+Route::get('signup', 'Web\MainController@getSignup');
+Route::get('certification', 'Web\MainController@getCertification');
+Route::get('detail', 'Web\MainController@getDetail');
+Route::get('location', 'Web\MainController@getLocation');
+
+
+Route::get('test', function () {
+
+    return view('mobile.index');
+});

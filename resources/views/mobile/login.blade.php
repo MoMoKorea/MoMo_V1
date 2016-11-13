@@ -1,5 +1,6 @@
-<?php include('header.php'); ?>
+@extends('mobile.header')
 
+@section('content')
 <style>
     body{
         background-image: url("/img/login/login_back.png");
@@ -31,9 +32,5 @@
         </div>
     </div>
 </div>
+@stop
 
-
-
-
-
-<?php include('footer.php'); ?>
