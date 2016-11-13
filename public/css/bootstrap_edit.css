@@ -1,0 +1,110 @@
+/* basic */
+
+a:hover,
+a:focus {
+    color: #FA5252;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+/* btn */
+
+.btn-line-c {
+    color: #888;
+    background-color: transparent;
+    border-color: #ccc;
+}
+.btn-line-c:hover,
+.btn-line-c:focus,
+.btn-line-c.focus,
+.btn-line-c:active,
+.btn-line-c.active,
+.open > .dropdown-toggle.btn-line-c {
+    color: #fff;
+    background-color: #EF6C00;
+    border-color: #EF6C00;
+}
+.btn-line-c:active,
+.btn-line-c.active,
+.open > .dropdown-toggle.btn-line-c {
+    background-image: none;
+}
+.btn-line-c.disabled,
+.btn-line-c[disabled],
+fieldset[disabled] .btn-line-c,
+.btn-line-c.disabled:hover,
+.btn-line-c[disabled]:hover,
+fieldset[disabled] .btn-line-c:hover,
+.btn-line-c.disabled:focus,
+.btn-line-c[disabled]:focus,
+fieldset[disabled] .btn-line-c:focus,
+.btn-line-c.disabled.focus,
+.btn-line-c[disabled].focus,
+fieldset[disabled] .btn-line-c.focus,
+.btn-line-c.disabled:active,
+.btn-line-c[disabled]:active,
+fieldset[disabled] .btn-line-c:active,
+.btn-line-c.disabled.active,
+.btn-line-c[disabled].active,
+fieldset[disabled] .btn-line-c.active {
+    background-color: transparent;
+    border-color: #EF6C00;
+}
+.btn-line-c .badge {
+    color: #EF6C00;
+    border-color: #EF6C00;
+    background-color: transparent;
+}
+
+
+.btn-full-p {
+    color: #fff;
+    background-color: #EF6C00;
+    border-color: #EF6C00;
+}
+.btn-full-p:hover,
+.btn-full-p:focus,
+.btn-full-p.focus,
+.btn-full-p:active,
+.btn-full-p.active,
+.open > .dropdown-toggle.btn-full-p {
+    color: #fff;
+    background-color: #EF6C00;
+    border-color: #EF6C00;
+}
+.btn-full-p:active,
+.btn-full-p.active,
+.open > .dropdown-toggle.btn-full-p {
+    background-image: none;
+}
+.btn-full-p.disabled,
+.btn-full-p[disabled],
+fieldset[disabled] .btn-full-p,
+.btn-full-p.disabled:hover,
+.btn-full-p[disabled]:hover,
+fieldset[disabled] .btn-full-p:hover,
+.btn-full-p.disabled:focus,
+.btn-full-p[disabled]:focus,
+fieldset[disabled] .btn-full-p:focus,
+.btn-full-p.disabled.focus,
+.btn-full-p[disabled].focus,
+fieldset[disabled] .btn-full-p.focus,
+.btn-full-p.disabled:active,
+.btn-full-p[disabled]:active,
+fieldset[disabled] .btn-full-p:active,
+.btn-full-p.disabled.active,
+.btn-full-p[disabled].active,
+fieldset[disabled] .btn-full-p.active {
+    background-color: #EF6C00;
+    border-color: #EF6C00;
+}
+.btn-full-p .badge {
+    color: #fff;
+    border-color: #EF6C00;
+    background-color: #EF6C00;
+}
