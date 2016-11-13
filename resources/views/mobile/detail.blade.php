@@ -76,11 +76,30 @@
 
     <div class="row">
         <div class="col-xs-12">
-            <div><b>모모님 리뷰</b></div>
+            <div class="mar_30"><b>모모님 리뷰</b></div>
 
-            <div>123123</div>
+            <div class="mar_15 text_c">
+                <div style="margin-bottom: 5px; line-height: 0px; color: #FFE200; font-size: 24px;">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" style="color: #ccc;" aria-hidden="true"></i>
+                </div>
+
+                <div class="color_8">13개의 리뷰</div>
+            </div>
+
+            <div class="shadow_box mar_15" style="-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;">
+                <div class="position_r" style="padding: 10px; background-color: #F1F1F1; border-bottom: solid #e5e5e5 1px;">
+                    <div style="position: absolute; top: 0px; left: 0px;">
+                        <img style="width: 30px; border: solid #E5E5E5 1px;" title="판매자ID" src="../img/detail/detail_seller_ex01.png">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
 </div>
 
 @stop
