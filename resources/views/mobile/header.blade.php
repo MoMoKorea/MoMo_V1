@@ -30,6 +30,25 @@
 
 </head>
 
+<!-- header_orange -->
+
+<div class="header_orange">
+    <div class="position_r">
+
+        <!-- 햄버거 -->
+
+        <a class="header_a" href="#">
+            <div class="header_meun">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </a>
+
+        <!-- 타이틀 -->
+
+        <h4 class="header_title">예약내역</h4>
+    </div>
+</div>
+
 <body>
     @yield('content')
 </body>

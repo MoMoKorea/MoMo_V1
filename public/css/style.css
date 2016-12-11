@@ -161,6 +161,10 @@ a{
     display: none;
 }
 
+.global_body{
+    margin-top: 44px;
+}
+
 .shadow_box{
     background: #fff;
     -moz-box-shadow: 0px 1px 2px #ccc;
@@ -194,6 +198,37 @@ a{
     color: #fff;
 }
 
+.header_orange{
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+
+    width: 100%;
+    height: 44px;
+    background-color: #ef6c00;
+
+    color: #fff;
+}
+
+.header_a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header_meun{
+    position: absolute;
+    top: 11px;
+    left: 15px;
+}
+
+.header_meun i{
+    font-size: 21px;
+}
+
+.header_title{
+    padding-top: 13px;
+    text-align: center;
+}
 
 /* location */
 
@@ -487,5 +522,30 @@ a{
     padding: 10px;
 }
 
+/* order */
 
+.order_list{
+    margin-top: 25px;
 
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.order_list_profile{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.order_list_profile img{
+    width: 38px;
+
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 150px;
+}
+
+.order_list_body{
+    padding: 15px 15px 15px 68px;
+}

@@ -35,6 +35,5 @@ Route::get('home', function () {
 Route::get('test', function () {
 
 
-    dd('here');
-    return view('mobile.index');
+    return view('mobile.order_list');
 });
