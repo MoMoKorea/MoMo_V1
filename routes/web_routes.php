@@ -12,17 +12,29 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+   if (auth()->check()) {
+       dd('Login Success!!');
+   }
+
+   else {
+       dd('Login Failed!!');
+   }
 });
 
 Route::get('login', 'Web\MainController@getLogin');
+Route::post('login', 'Auth\LoginController@login');
 Route::get('signup', 'Web\MainController@getSignup');
 Route::get('certification', 'Web\MainController@getCertification');
 Route::get('detail', 'Web\MainController@getDetail');
 Route::get('location', 'Web\MainController@getLocation');
 
+Route::get('home', function () {
+   return redirect(url('/'));
+});
 
 Route::get('test', function () {
 
+
+    dd('here');
     return view('mobile.index');
 });

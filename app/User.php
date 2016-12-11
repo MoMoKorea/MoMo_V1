@@ -15,7 +15,36 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'id',
+        'status',
+        'type',
+        'email',
+        'username',
+        'fund',
+        'withdrawn_profits',
+        'profits',
+        'pay',
+        'work_days',
+        'work_region',
+        'bank_code',
+        'bank_account',
+        'reception',
+        'picture_image',
+        'realname',
+        'rrn',
+        'main_contact_number',
+        'sub_contact_number',
+        'addr',
+        'addr2',
+        'age',
+        'career',
+        'description',
+        'device',
+        'cloud_message_id',
+        'social_account_type',
+        'social_account_id',
+        'mobile_conn_id',
+        'mobile_dupl_id'
     ];
 
     /**
@@ -24,6 +53,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password',
+        'token',
     ];
 }

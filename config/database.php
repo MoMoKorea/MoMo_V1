@@ -53,12 +53,18 @@ return [
         ],
 
         'mysql' => [
+            'read' => array(
+                'host'      => getenv('DB_READ_HOST'),
+                'username'  => getenv('DB_READ_USERNAME'),
+                'password'  => getenv('DB_READ_PASSWORD'),
+            ),
+            'write' => array(
+                'host'      => getenv('DB_WRITE_HOST'),
+                'username'  => getenv('DB_WRITE_USERNAME'),
+                'password'  => getenv('DB_WRITE_PASSWORD'),
+            ),
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'localhost'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => getenv('DB_DATABASE'),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',

@@ -17,9 +17,9 @@ class MainController extends Controller {
         return view('mobile.login');
     }
 
-    public function getSignup() {
-        return view('mobile.signup');
-    }
+//    public function getSignup() {
+//        return view('mobile.signup');
+//    }
 
     public function getCertification() {
         return view('mobile.certification');
