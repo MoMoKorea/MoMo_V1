@@ -56,14 +56,6 @@
                     </div>
                 </div>
 
-                <div class="row mar_15">
-                    <div class="col-xs-12">
-                        <div><b>근무요일</b></div>
-
-                        <div><!-- 아직 디자인못함 이후 업데이트예정 --></div>
-                    </div>
-                </div>
-
             </div>
         </div>
 
@@ -76,10 +68,27 @@
 
     <div class="row">
         <div class="col-xs-12">
+            <div class="mar_30"><b>근무요일</b></div>
+
+            <div class="color_8 mar_15 shadow_box detail_time">
+                <div class="detail_time_cell">
+                    <div>2234234</div>
+                </div>
+
+                <div class="detail_time_cell">
+                    <div>월</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
             <div class="mar_30"><b>모모님 리뷰</b></div>
 
             <div class="mar_15 text_c">
-                <div style="margin-bottom: 5px; line-height: 0px; color: #FFE200; font-size: 24px;">
+                <div class="detail_review_star">
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -90,15 +99,50 @@
                 <div class="color_8">13개의 리뷰</div>
             </div>
 
-            <div class="shadow_box mar_15" style="-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;">
-                <div class="position_r" style="padding: 10px; background-color: #F1F1F1; border-bottom: solid #e5e5e5 1px;">
-                    <div style="position: absolute; top: 0px; left: 0px;">
-                        <img style="width: 30px; border: solid #E5E5E5 1px;" title="판매자ID" src="../img/detail/detail_seller_ex01.png">
+            <div class="shadow_box mar_15 detail_review_body">
+                <div class="position_r detail_review_buyer">
+                    <div class="detail_review_img">
+                        <img title="구매자ID" src="../img/detail/detail_seller_ex02.png">
                     </div>
+
+                    <h6 class="color_8 detail_review_date">
+                        16.06.19 18:00
+                    </h6>
+
+                    <h6 class="color_8 detail_review_right">
+                        <div class="detail_review_right_star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" style="color: #ccc;" aria-hidden="true"></i>
+                        </div>
+                    </h6>
+
+                    <div class="detail_review_text">
+                        오늘 개인적인 용무가 길어져서 마음이 너무 불편했었는데, 모모님이 연장 근무하시게 되었는데도 흔쾌히 받아주셔서 감사합니다
+                    </div>
+                </div>
+
+                <div class="position_r detail_review_seller">
+                    <div class="detail_review_img">
+                        <img title="판매자ID" src="../img/detail/detail_seller_ex01.png">
+                    </div>
+
+                    <h6 class="color_8 detail_review_right">
+                        최희 님
+                    </h6>
+
+                    <div class="detail_review_text">
+                        도착시간까지 잘 이야기 해주셔서 큰 지장없었어요 다음에도 연락주세요 :)
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="mar_50"></div>
 
 </div>
 
