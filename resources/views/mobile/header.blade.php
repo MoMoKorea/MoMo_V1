@@ -43,9 +43,16 @@
             </div>
         </a>
 
-        <!-- 타이틀 -->
+        <!-- 타이틀_text -->
 
-        <h4 class="header_title">예약내역</h4>
+        {{--<h4 class="header_title">예약 내역</h4>--}}
+
+
+        <!-- 타이틀_logo -->
+
+        <h4 class="header_logo">
+            <img title="logo" src="../img/logo_w.png">
+        </h4>
     </div>
 </div>
 

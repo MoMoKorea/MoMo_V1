@@ -35,5 +35,5 @@ Route::get('home', function () {
 Route::get('test', function () {
 
 
-    return view('mobile.order_list');
+    return view('mobile.sitter_list');
 });

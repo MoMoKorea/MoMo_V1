@@ -230,6 +230,14 @@ a{
     text-align: center;
 }
 
+.header_logo{
+     text-align: center;
+ }
+
+.header_logo img{
+    width: 30px;
+}
+
 /* location */
 
 .local_map{
