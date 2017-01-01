@@ -44,7 +44,7 @@ class CreateUsersTable extends Migration
                 $table->string('main_contact_number')->nullable()->comment('연락처 (인증용)');
                 $table->string('sub_contact_number')->nullable()->comment('두번째 연락처');
                 $table->string('addr')->nullable()->comment('주소1');
-                $table->string('addr2')->nullable()->comment('주소2');
+                $table->integer('location')->nullable()->comment('선택한 지역');
                 $table->integer('age')->default(0)->comment('나이');
                 $table->text('career')->nullable()->comment('경력');
                 $table->text('description')->nullable()->comment('자기소개');
@@ -55,7 +55,9 @@ class CreateUsersTable extends Migration
                 $table->string('mobile_conn_id')->nullable()->comment('소셜 계정 ID');
                 $table->string('mobile_dupl_id')->nullable()->comment('소셜 계정 ID');
                 $table->string('token')->default('')->comment('토큰 key');
-                $table->timestamps();
+                $table->rememberToken()->comment('로그인 기억 토큰');
+                $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+                $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             });
         }
     }

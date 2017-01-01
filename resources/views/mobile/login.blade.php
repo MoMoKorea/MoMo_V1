@@ -14,22 +14,19 @@
     <div class="text_c login_logo">
         <img title="logo" src="../img/logo_w.png">
 
-        <form id="loginForm" method="post" action="login">
-            {{ csrf_field() }}
+        {!! Form::open(['id' => 'loginForm']) !!}
             <div class="login_input">
                 <div class="position_r mar_30">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-
                     <input type="email" name="email" placeholder="이메일">
                 </div>
 
                 <div class="position_r mar_15">
                     <i class="fa fa-lock" aria-hidden="true"></i>
-
                     <input type="password" name="password" placeholder="비밀번호">
                 </div>
             </div>
-        </form>
+        {{ Form::close() }}
 
         <div class="login_justlogin">
             <a class="color_w a_under" href="#">
@@ -60,7 +57,22 @@
     function setLoginClickListener() {
 
         $('#loginBtn').click(function () {
-            $('#loginForm').submit();
+            var dataForm = $('#loginForm').serialize();
+
+            $.ajax({
+                type: "POST",
+                url: "login",
+                dataType: "json",
+                data: dataForm,
+                success: function(response) {
+                    if (response.meta.status == 1) {
+                        location.href = response.meta.uri;
+                    }
+
+                }
+            })
+
+
         })
 
     }

@@ -21,19 +21,18 @@ Route::get('/', function () {
    }
 });
 
-Route::get('login', 'Web\MainController@getLogin');
-Route::post('login', 'Auth\LoginController@login');
-Route::get('signup', 'Web\MainController@getSignup');
-Route::get('certification', 'Web\MainController@getCertification');
+Route::get('login', 'Web\AuthController@getLogin');
+Route::post('login', 'Web\AuthController@login');
+Route::get('signup', 'Web\AuthController@getSignup');
+Route::get('certification', 'Web\AuthController@getCertification');
 Route::get('detail', 'Web\MainController@getDetail');
 Route::get('location', 'Web\MainController@getLocation');
+Route::post('location', 'Web\MainController@setLocation');
 
 Route::get('home', function () {
    return redirect(url('/'));
 });
 
 Route::get('test', function () {
-
-
     return view('mobile.sitter_list');
 });
