@@ -12,6 +12,10 @@ ol {
     margin-bottom: 0px;
 }
 
+.radio label, .checkbox label {
+    min-height: 0px;
+}
+
 /* btn */
 
 .btn-line-c {

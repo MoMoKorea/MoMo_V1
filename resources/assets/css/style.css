@@ -202,6 +202,20 @@ a{
     color: #fff;
 }
 
+.bottom_btn_login{
+    width: 100%;
+    padding: 17px 0px 17px 0px;
+    background-image: url("/img/login/login_input.png");
+    color: #FFD193;
+}
+
+.bottom_btn_signup{
+    width: 100%;
+    padding: 17px 0px 17px 0px;
+    background-image: url("/img/login/login_input.png");
+    color: #9af0f3;
+}
+
 .header_orange{
     position: fixed;
     top: 0px;
@@ -307,8 +321,7 @@ a{
 }
 
 .login_justlogin{
-    position: relative;
-    top: 20px;
+    margin-top: 30px;
 }
 
 .login_signup{
@@ -365,6 +378,83 @@ a{
 }
 .login_input input:-moz-placeholder { /* Firefox 18- */
     color: #FFD193;
+}
+
+/* signup */
+
+.signup_body{
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+}
+
+.signup_logo{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+.signup_logo img{
+    width: 70%;
+}
+
+.signup_input{
+    width: 70%;
+    margin: 15px auto 0px auto;
+}
+
+.signup_input:first-child{
+    width: 70%;
+    margin: 30px auto 0px auto;
+}
+
+.signup_input .fa-envelope{
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    color: #fff;
+}
+
+.signup_input .fa-lock{
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    color: #fff;
+}
+
+.signup_input input{
+    background-image: url("/img/login/login_input.png");
+    background-color: transparent;
+
+    width: 100%;
+    padding: 12px 0px 12px 40px;
+    color: #fff;
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.signup_input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #9af0f3;
+}
+.signup_input input::-moz-placeholder { /* Firefox 19+ */
+    color: #9af0f3;
+}
+.signup_input input:-ms-input-placeholder { /* IE 10+ */
+    color: #9af0f3;
+}
+.signup_input input:-moz-placeholder { /* Firefox 18- */
+    color: #9af0f3;
+}
+
+.signup_checkbox{
+    width: 70%;
+    margin: 20px auto 0px auto;
+    color: #9af0f3;
 }
 
 /* certification */

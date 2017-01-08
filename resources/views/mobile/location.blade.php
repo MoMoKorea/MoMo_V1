@@ -1,13 +1,6 @@
 @extends('mobile.header')
 
 @section('content')
-
-    <style>
-        .header_orange{
-            display: none;
-        }
-    </style>
-
     <div id="location_div">
         <div>
             <img title="당신의 위치는 어디인가요?" src="../img/location/local_map.png">
@@ -52,7 +45,7 @@
 
             <!-- 활성화는 bottom_btn_p, 비활성화는 bottom_btn_c -->
 
-            <Button class="bottom_btn" style="width: 100%;" v-bind:class="{bottom_btn_p : location_id > 0, bottom_btn_c: location_id == 0}" v-on:click="setLocationUpdate">
+            <Button class="mar_50" style="width: 100%;" v-bind:class="{bottom_btn_p : location_id > 0, bottom_btn_c: location_id == 0}" v-on:click="setLocationUpdate">
                 <h4 class="text_c">
                     <b>다음</b>
                 </h4>
