@@ -8,6 +8,10 @@
         background: -moz-linear-gradient(linear, left top, left bottom, from(#FCC351), to(#EF6B00)) fixed;
         background: linear-gradient(linear, left top, left bottom, from(#FCC351), to(#EF6B00)) fixed;
     }
+
+    .header_orange{
+        display: none;
+    }
 </style>
 
 <div class="login_body">
