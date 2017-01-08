@@ -7,6 +7,10 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    .header_orange{
+        display: none;
+    }
 </style>
 
 <div class="login_body">

@@ -1,6 +1,13 @@
 @extends('mobile.header')
 
 @section('content')
+
+    <style>
+        .header_orange{
+            display: none;
+        }
+    </style>
+
     <div id="location_div">
         <div>
             <img title="당신의 위치는 어디인가요?" src="../img/location/local_map.png">
