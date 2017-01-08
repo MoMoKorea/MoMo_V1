@@ -2,6 +2,12 @@
 
 @section('content')
 
+<style>
+    .header_orange{
+        display: none;
+    }
+</style>
+
 <div class="position_r">
     <div class="detail_top" style="background-image: url('/img/detail/detail_top_ex01.png')"></div>
 

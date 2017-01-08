@@ -2,6 +2,12 @@
 
 @section('content')
 
+    <style>
+        .header_orange{
+            display: none;
+        }
+    </style>
+
     <div class="login_body">
 
         <div class="certifi_body text_c">
