@@ -17,8 +17,9 @@ elixir(function (mix) {
 
     mix.styles(['bootstrap.css',
         'bootstrap_edit.css',
-        'normalize.css',
-        'style.css'], 'public/css/momo_style.css');
+        'normalize.css'], 'public/css/momo_style.css');
+
+    mix.styles(['style.css'], 'public/css/momo_custom_style.css')
 
     mix.styles(['fonts.css'], 'public/css/momo_fonts.css');
 
@@ -26,6 +27,8 @@ elixir(function (mix) {
     mix.scripts(['config.js'], 'public/js/momo.config.js')
 
     mix.version([
+        'public/css/momo_style.css',
+        'public/css/momo_custom_style.css',
         'public/js/momo.location.js'
     ])
 });
