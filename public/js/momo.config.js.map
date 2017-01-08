@@ -1,0 +1,1 @@
+{"version":3,"sources":["config.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"momo.config.js","sourcesContent":["/**\n * Created by gon on 2017. 1. 1..\n */\n\n$(function () {\n    $.ajaxSetup({\n        headers: {\n            'X-CSRF-TOKEN': $('meta[name=\"_token\"]').attr('content')\n        }\n    })\n})"]}
