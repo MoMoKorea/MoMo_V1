@@ -24,6 +24,7 @@ Route::get('/', function () {
 Route::get('login', 'Web\AuthController@getLogin');
 Route::post('login', 'Web\AuthController@login');
 Route::get('signup', 'Web\AuthController@getSignup');
+Route::post('signup', 'Web\AuthController@signup');
 Route::get('certification', 'Web\AuthController@getCertification');
 Route::get('detail', 'Web\MainController@getDetail');
 Route::get('location', 'Web\MainController@getLocation');

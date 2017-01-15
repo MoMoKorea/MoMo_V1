@@ -18,6 +18,39 @@ class AuthController extends Controller {
     {
         $this->userRepo = $userRepository;
     }
+    public function getSignup() {
+
+        return view('mobile.signup');
+    }
+
+    public function signup(Request $request) {
+
+        $credentials = $request->only(['email', 'password']);
+
+        // TODO :: validation
+
+        if($this->userRepo->signup($credentials)) {
+
+            return json_encode([
+                'status' => 1,
+                'success' => [
+                    'message' => '환영합니다!'
+                ],
+                'data' => [
+                    'uri' => '/'
+                ]
+            ]);
+
+        }
+
+        return json_encode([
+            'status' => -1,
+            'errors' => [
+                'message' => '회원가입에 실패했습니다.'
+            ]
+        ]);
+    }
+
 
     public function getAccount() {
         return view('mobile.account');

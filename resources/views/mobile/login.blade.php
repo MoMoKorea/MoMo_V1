@@ -33,7 +33,7 @@
         {{ Form::close() }}
 
         <div class="login_justlogin">
-            <a class="color_w a_under" href="#">
+            <a class="color_w a_under" href="{{ URL::to('/signup') }}">
                 가입하지 않았나요?
             </a>
         </div>

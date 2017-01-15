@@ -21,4 +21,30 @@ class DbUserRepository {
 
         auth()->login($user, true);
     }
+
+    public function signup($credential)
+    {
+        $email = trim($credential['email']);
+        $username = explode('@', $email)[0];
+
+        // 유저이름 중복 체크
+        if(User::where('username', $username)->first()) {
+            $username = $username . str_random(5);
+        }
+
+        $userData = [
+            'email' => $email,
+            'username' => $username,
+            'password' => bcrypt(getPasswordWithSalt($credential['password']))
+        ];
+
+        // 계정 생성
+        $user = User::create($userData);
+        // 로그인
+        auth()->login($user, true);
+
+        return true;
+
+    }
+
 }

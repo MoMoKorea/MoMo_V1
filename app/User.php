@@ -46,7 +46,8 @@ class User extends Authenticatable
         'social_account_type',
         'social_account_id',
         'mobile_conn_id',
-        'mobile_dupl_id'
+        'mobile_dupl_id',
+        'password',
     ];
 
     /**
@@ -55,7 +56,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password',
         'token',
     ];
 }
