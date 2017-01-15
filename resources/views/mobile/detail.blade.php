@@ -62,6 +62,29 @@
                     </div>
                 </div>
 
+                <div class="row mar_15">
+                    <div class="col-xs-12">
+                        <div><b>희망 근무요일</b></div>
+
+                        <div class="mar_5 color_8 position_r">
+                            <div class="inline_b detail_seller_date_w">월</div>
+
+                            <div class="inline_b detail_seller_date_w">화</div>
+
+                            <div class="inline_b detail_seller_date_p">수</div>
+
+                            <div class="inline_b detail_seller_date_p">목</div>
+
+                            <div class="inline_b detail_seller_date_p">금</div>
+
+                            <div class="inline_b detail_seller_date_p">토</div>
+
+                            <div class="inline_b detail_seller_date_p">일</div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
 
@@ -74,32 +97,13 @@
 
     <div class="row">
         <div class="col-xs-12">
-            <div class="mar_30"><b>근무요일</b></div>
-
-            <div class="color_8 mar_15 shadow_box detail_time">
-                <div class="detail_time_cell">
-                    <div>2234234</div>
-                </div>
-
-                <div class="detail_time_cell">
-                    <div>월</div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-12">
             <div class="mar_30"><b>모모님 리뷰</b></div>
 
             <div class="mar_15 text_c">
                 <div class="detail_review_star">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" style="color: #ccc;" aria-hidden="true"></i>
+
+                    <!-- 별은 하단에 스크립트 -->
+                    <div id="review_main"></div>
                 </div>
 
                 <div class="color_8">13개의 리뷰</div>
@@ -116,13 +120,9 @@
                     </h6>
 
                     <h6 class="color_8 detail_review_right">
-                        <div class="detail_review_right_star">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" style="color: #ccc;" aria-hidden="true"></i>
-                        </div>
+                        <!-- 별은 하단에 스크립트 -->
+
+                        <div id="review_01"></div>
                     </h6>
 
                     <div class="detail_review_text">
@@ -150,6 +150,30 @@
 
     <div class="mar_50"></div>
 
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#review_main").rateYo({
+                rating: 4.5,
+                starWidth: "28px",
+                ratedFill: "#ffe200",
+                normalFill: "#cccccc",
+                readOnly: true
+            });
+
+            $("#review_01").rateYo({
+                rating: 4.5,
+                starWidth: "11px",
+                ratedFill: "#ffe200",
+                normalFill: "#cccccc",
+                readOnly: true
+            });
+
+        })
+
+    </script>
 </div>
 
 @stop
