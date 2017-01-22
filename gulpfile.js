@@ -13,7 +13,31 @@ require('laravel-elixir-vue-2');
  |
  */
 
-elixir(mix => {
-    mix.sass('app.scss')
-       .webpack('app.js');
+elixir(function (mix) {
+
+    mix.styles(['bootstrap.css',
+        'bootstrap_edit.css',
+        'normalize.css'], 'public/css/momo_style.css');
+    mix.styles(['style.css'], 'public/css/momo_custom_style.css')
+    mix.styles(['fonts.css'], 'public/css/momo_fonts.css');
+    mix.styles(['about_header.css'], 'public/css/momo_about_style.css');
+
+    mix.scripts(['momo.location.vue.js'], 'public/js/momo.location.js')
+    mix.scripts(['config.js'], 'public/js/momo.config.js')
+    mix.scripts([
+        'jquery.min.js',
+        'jquery.dropotron.min.js',
+        'skel.min.js',
+        'util.js',
+        'main.js'
+    ], 'public/js/momo.about.js')
+
+
+    mix.version([
+        'public/css/momo_style.css',
+        'public/css/momo_custom_style.css',
+        'public/js/momo.location.js',
+        'public/css/momo_about_style.css',
+        'public/js/momo.about.js'
+    ])
 });

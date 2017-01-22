@@ -9,13 +9,45 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    protected $table = 'users';
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'id',
+        'status',
+        'type',
+        'email',
+        'username',
+        'fund',
+        'withdrawn_profits',
+        'profits',
+        'pay',
+        'work_days',
+        'work_region',
+        'bank_code',
+        'bank_account',
+        'reception',
+        'picture_image',
+        'realname',
+        'rrn',
+        'main_contact_number',
+        'sub_contact_number',
+        'addr',
+        'location',
+        'age',
+        'career',
+        'description',
+        'device',
+        'cloud_message_id',
+        'social_account_type',
+        'social_account_id',
+        'mobile_conn_id',
+        'mobile_dupl_id',
+        'password',
     ];
 
     /**
@@ -24,6 +56,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'token',
     ];
 }

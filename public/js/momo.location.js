@@ -1,0 +1,1 @@
+var location_vue=new Vue({el:"#location_div",data:{location_id:0},methods:{setLocationSelected:function(t){this.location_id=t},setLocationUpdate:function(){var t={locationId:this.location_id};$.ajax({url:"location",type:"POST",dataType:"json",data:t,success:function(t){1==t.meta.status&&(location.href=t.data.uri)}})}}});
