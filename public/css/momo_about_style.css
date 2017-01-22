@@ -1,3 +1,34 @@
+@media screen and (max-width: 736px) {
+  .homepage #header-wrapper {
+    position: relative;
+    padding: 4em 20px 2em 20px;
+    background-image: url("/img/images/header.svg");
+    background-image: url("/img/images/overlay.png"), url("/img/images/header.svg"), -moz-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+    background-image: url("/img/images/overlay.png"), url("/img/images/header.svg"), -webkit-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+    background-image: url("/img/images/overlay.png"), url("/img/images/header.svg"), -ms-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+    background-image: url("/img/images/overlay.png"), url("/img/images/header.svg"), linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+    background-color: #f08c89;
+    background-size: 100% 620%;
+    background-size: 128px 128px, 100% 620%, auto;
+    background-repeat: repeat, no-repeat, no-repeat;
+  }
+}
+@media screen and (min-width: 737px) {
+  .homepage #header-wrapper {
+    position: relative;
+    padding: 4em 0 2em 0;
+    background-image: url("/img/images/header.svg");
+    background-image: url("/img/images/overlay.png"), url("/img/images/header.svg"), -moz-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+    background-image: url("/img/images/overlay.png"), url("/img/images/header.svg"), -webkit-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+    background-image: url("/img/images/overlay.png"), url("/img/images/header.svg"), -ms-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+    background-image: url("/img/images/overlay.png"), url("/img/images/header.svg"), linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+    background-color: #f08c89;
+    background-size: 100% 620%;
+    background-size: 128px 128px, 100% 620%, auto;
+    background-repeat: repeat, no-repeat, no-repeat;
+  }
+}
+
 /*@import url("/css/font-awesome.css");*/
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
@@ -3004,3 +3035,5 @@ i.icon {
 			}
 
 	}
+
+/*# sourceMappingURL=momo_about_style.css.map */
