@@ -78,22 +78,30 @@
 
         function setCheckboxChangeListener() {
 
-            var termsCheckBox = $("#termsAgree"),
-                privacyCheckBox = $("#privacyAgree")
+            var emailInput = $("#email"),
+                passwordInput = $("#password"),
+                termsCheckBox = $("#termsAgree"),
+                privacyCheckBox = $("#privacyAgree"),
+                signupButton = $("#signupButton")
                 ;
 
             $listener = function () {
 
-                if(termsCheckBox.is(":checked")
-                && privacyCheckBox.is(":checked"))
+                if(emailInput.val() != ""
+                && passwordInput.val() != ""
+                && (termsCheckBox.is(":checked") && privacyCheckBox.is(":checked")))
                 {
-                    $("#signupButton").removeAttr("disabled");
+                    signupButton.children().removeClass("bottom_btn_signup").addClass("bottom_btn_f");
+                    signupButton.removeAttr("disabled");
                     return;
                 }
 
-                $("#signupButton").attr("disabled", "disabled");
+                signupButton.children().removeClass("bottom_btn_f").addClass("bottom_btn_signup");
+                signupButton.attr("disabled", "disabled");
             };
 
+            emailInput.change($listener)
+            passwordInput.change($listener)
             termsCheckBox.change($listener);
             privacyCheckBox.change($listener);
         }

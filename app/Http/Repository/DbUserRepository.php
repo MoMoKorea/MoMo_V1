@@ -47,4 +47,33 @@ class DbUserRepository {
 
     }
 
+    public function getMainSitterList()
+    {
+
+        $sitterList = User::where('type', 'SITTER')->get();
+
+        $simpleList = array();
+
+        if ($sitterList
+        && count($sitterList) > 0)
+        {
+            foreach ($sitterList as $sitter) {
+                $sitterData = [
+                    'picture_image' => $sitter->picture_image,
+                    'username' => $sitter->username,
+                    'age' => $sitter->age,
+                    'career' => $sitter->career
+                ];
+                array_push($simpleList, $sitterData);
+            }
+
+
+            return $simpleList;
+        }
+
+
+        return null;
+
+    }
+
 }

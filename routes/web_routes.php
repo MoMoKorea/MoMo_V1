@@ -12,13 +12,6 @@
 */
 
 Route::get('/', function () {
-   if (auth()->check()) {
-       dd('Login Success!!');
-   }
-
-   else {
-       dd('Login Failed!!');
-   }
 });
 
 Route::get('login', 'Web\AuthController@getLogin');
@@ -31,8 +24,29 @@ Route::get('location', 'Web\MainController@getLocation');
 Route::post('location', 'Web\MainController@setLocation');
 
 Route::get('home', function () {
-   return redirect(url('/'));
+   return redirect('/');
 });
+
+Route::group(['prefix' => 'about'], function() {
+
+    Route::get('info', function (){return view('desktop.info');});
+    Route::get('main', function (){return view('desktop.main');});
+    Route::get('team', function (){return view('desktop.team');});
+    Route::group(['prefix' => 'use'], function (){
+        Route::get('/', function () {
+           return view('desktop.use');
+        });
+
+        Route::get('apply', function () {return view('desktop.contracts.apply');});
+        Route::get('cost', function () {return view('desktop.contracts.cost');});
+        Route::get('form', function () {return view('desktop.contracts.form');});
+        Route::get('health', function () {return view('desktop.contracts.health');});
+        Route::get('interview', function () {return view('desktop.contracts.interview');});
+        Route::get('workscope', function () {return view('desktop.contracts.workscope');});
+
+    });
+});
+
 
 Route::get('test', function () {
     return view('mobile.detail');

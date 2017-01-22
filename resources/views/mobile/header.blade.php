@@ -25,7 +25,6 @@
 
     <script src="https://unpkg.com/vue@2.1.8/dist/vue.js"></script>
 
-
 </head>
 
 <!-- header_orange -->

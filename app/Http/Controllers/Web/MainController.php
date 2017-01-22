@@ -17,6 +17,12 @@ class MainController extends Controller {
         $this->mainRepo = $mainRepo;
     }
 
+    public function getMapListData() {
+
+
+
+
+    }
 
 
     public function getDetail() {
@@ -25,7 +31,12 @@ class MainController extends Controller {
 
     public function getLocation() {
 
-        // TODO :: 로그인된 회원중 이미 지역선택이 되있을경우 홈으로
+        if (auth()->check()) {
+            $userid = auth()->user()->id;
+            if (User::where('id', $userid)->first()) {
+                return redirect("/");
+            }
+        }
 
         return view('mobile.location');
     }
@@ -46,7 +57,7 @@ class MainController extends Controller {
                     'msg' => 'success'
                 ],
                 'data' => [
-                    'uri' => '/test'
+                    'uri' => '/'
                 ]
             ]);
         }

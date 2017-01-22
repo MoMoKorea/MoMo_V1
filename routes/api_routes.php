@@ -18,8 +18,9 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:api');
 
 
-Route::group(['prefix' => 'api/v1'], function () {
+Route::group(['prefix' => 'v1'], function () {
 
     Route::get('getApplicationJsonData', 'App\ApiController@getApplicationJson');
+    Route::get('getMainSitterListData', 'App\ApiController@getMainSitterList');
 
 });
