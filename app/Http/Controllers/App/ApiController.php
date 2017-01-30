@@ -33,7 +33,7 @@ class ApiController extends Controller
         // 시터 불러오기 (TODO:: pagination)
         $sitterList = $this->userRepo->getMainSitterList();
 
-        $this->setStatusCode(200)->responseSuccessData(['sitters' => $sitterList]);
+        return $this->setStatusCode(200)->responseSuccessData(['sitters' => $sitterList]);
 
     }
 

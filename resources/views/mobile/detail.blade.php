@@ -14,7 +14,7 @@
     <div class="detail_top_black"></div>
 
     <div class="detail_top_seller position_r">
-        <img class="shadow_box" title="판매자ID" src="../img/detail/detail_seller_ex01.png">
+        <img class="shadow_box" title="판매자ID" src="/img/detail/detail_seller_ex01.png">
     </div>
 </div>
 
@@ -132,7 +132,7 @@
 
                 <div class="position_r detail_review_seller">
                     <div class="detail_review_img">
-                        <img title="판매자ID" src="../img/detail/detail_seller_ex01.png">
+                        <img title="판매자ID" src="/img/detail/detail_seller_ex01.png">
                     </div>
 
                     <h6 class="color_8 detail_review_right">

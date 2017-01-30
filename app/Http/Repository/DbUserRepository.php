@@ -50,30 +50,35 @@ class DbUserRepository {
     public function getMainSitterList()
     {
 
-        $sitterList = User::where('type', 'SITTER')->get();
+        $testLat = 37.4782427;
+        $testLan = 127.1287351;
+
+        $sitterList = User::where('type', 'SITTER')->first();
 
         $simpleList = array();
-
         if ($sitterList
         && count($sitterList) > 0)
         {
-            foreach ($sitterList as $sitter) {
+            for ($i = 0; $i < 15; $i++) {
+
+                $randPosition = (mt_rand(1, 9) / 2000);
+                $randRate = (mt_rand(1, 5) * 1.1);
+
                 $sitterData = [
-                    'picture_image' => $sitter->picture_image,
-                    'username' => $sitter->username,
-                    'age' => $sitter->age,
-                    'career' => $sitter->career
+                    'picture_image' => $sitterList->picture_image,
+                    'username' => $sitterList->username,
+                    'age' => $sitterList->age,
+                    'career' => $sitterList->career,
+                    'lat' => $testLat + $randPosition,
+                    'lan' => $testLan + $randPosition,
+                    'rate' => $randRate
                 ];
                 array_push($simpleList, $sitterData);
             }
 
-
             return $simpleList;
         }
-
-
         return null;
-
     }
 
 }

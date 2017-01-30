@@ -23,9 +23,16 @@ Route::get('detail', 'Web\MainController@getDetail');
 Route::get('location', 'Web\MainController@getLocation');
 Route::post('location', 'Web\MainController@setLocation');
 
+// sitter
+
+Route::get('sitter/{id}', 'Web\SitterController@getSitterDetail')->where('id', '[0-9]+');
+
+
+
 Route::get('home', function () {
    return redirect('/');
 });
+
 
 Route::group(['prefix' => 'about'], function() {
 
