@@ -35,9 +35,9 @@ elixir(function (mix) {
 
     mix.version([
         'public/css/momo_style.css',
-        'public/css/momo_custom_style.css',
         'public/js/momo.location.js',
         'public/css/momo_about_style.css',
-        'public/js/momo.about.js'
+        'public/js/momo.about.js',
+        'public/css/momo_custom_style.css'
     ])
 });

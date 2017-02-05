@@ -683,6 +683,10 @@ a{
     padding: 4px 8px 0px 0px;
 }
 
+.detail_map_width {
+    width: 100% !important;
+}
+
 /* order */
 
 .order_list{
