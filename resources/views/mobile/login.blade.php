@@ -3,10 +3,10 @@
 @section('content')
 <style>
     body{
-        background: -webkit-gradient(linear, left top, left bottom, from(#FCC351), to(#ff5500)) fixed;
-        background: -o-linear-gradient(linear, left top, left bottom, from(#FCC351), to(#ff5500)) fixed;
-        background: -moz-linear-gradient(linear, left top, left bottom, from(#FCC351), to(#ff5500)) fixed;
-        background: linear-gradient(linear, left top, left bottom, from(#FCC351), to(#ff5500)) fixed;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FCC351), to(#EF6C00)) fixed;
+        background: -o-linear-gradient(linear, left top, left bottom, from(#FCC351), to(#EF6C00)) fixed;
+        background: -moz-linear-gradient(linear, left top, left bottom, from(#FCC351), to(#EF6C00)) fixed;
+        background: linear-gradient(linear, left top, left bottom, from(#FCC351), to(#EF6C00)) fixed;
     }
 
     .header_orange{

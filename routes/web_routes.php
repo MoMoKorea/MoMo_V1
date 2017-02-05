@@ -56,5 +56,5 @@ Route::group(['prefix' => 'about'], function() {
 
 
 Route::get('test', function () {
-    return view('mobile.detail');
+    return view('mobile.certification');
 });

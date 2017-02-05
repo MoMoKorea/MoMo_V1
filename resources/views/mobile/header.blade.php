@@ -27,14 +27,14 @@
 
 </head>
 
-<!-- header_orange -->
+<!-- header 오랜지 -->
 
 <div class="header_orange">
     <div class="position_r">
 
         <!-- 햄버거 -->
 
-        <a class="header_a" href="#">
+        <a class="header_p" href="#">
             <div class="header_meun">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
@@ -52,6 +52,30 @@
         </h4>
     </div>
 </div>
+
+
+<!-- header 화이트 -->
+
+<div class="header_white">
+    <div class="position_r">
+
+        <!-- 뒤로가기 -->
+
+        <a class="header_3" href="#">
+            <div class="header_back">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </div>
+        </a>
+
+
+        <!-- 타이틀_logo -->
+
+        <h4 class="header_logo">
+            <img title="logo" src="../img/logo_3.png">
+        </h4>
+    </div>
+</div>
+
 
 <body>
     @yield('content')
