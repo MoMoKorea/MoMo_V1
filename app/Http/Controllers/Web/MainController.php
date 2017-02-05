@@ -48,7 +48,7 @@ class MainController extends Controller {
         if (auth()->check()) {
 
             auth()->user()->update([
-               'location' => intval($locationId)
+                'location' => intval($locationId)
             ]);
 
             return json_encode([

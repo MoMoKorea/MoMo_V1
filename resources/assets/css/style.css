@@ -809,6 +809,10 @@ a{
     margin: 4px auto 0px auto;
 }
 
+.slist_list_empty img{
+    width: 90px;
+}
+
 /* rateyo */
 
 .jq-ry-container {

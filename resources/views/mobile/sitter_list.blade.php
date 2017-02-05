@@ -2,6 +2,12 @@
 
 @section('content')
 
+    <style>
+        .header_white{
+            display: none;
+        }
+    </style>
+
     <div class="global_body">
         <div class="position_r">
             <!-- map -->
@@ -19,71 +25,83 @@
                 </div>
             </div>
 
-            <div class="slist_body">
+            {{--<div class="slist_body">--}}
 
-                <!-- 컨텐츠_01 -->
+                {{--<!-- 컨텐츠_01 -->--}}
 
-                <div class="inline_b position_r shadow_box text_c slist_list">
-                    <a class="color_3" href="../detail">
-                        <div class="slist_list_img">
-                            <img class="shadow_box" title="판매자ID" src="../img/detail/detail_seller_ex01.png">
-                        </div>
+                {{--<div class="inline_b position_r shadow_box text_c slist_list">--}}
+                    {{--<a class="color_3" href="../detail">--}}
+                        {{--<div class="slist_list_img">--}}
+                            {{--<img class="shadow_box" title="판매자ID" src="../img/detail/detail_seller_ex01.png">--}}
+                        {{--</div>--}}
 
-                        <div class="slist_list_box">
-                            <h5><b>최희&nbsp;님</b></h5>
+                        {{--<div class="slist_list_box">--}}
+                            {{--<h5><b>최희&nbsp;님</b></h5>--}}
 
-                            <div class="slist_list_star">
-                                <div id="list_rate01"></div>
-                            </div>
+                            {{--<div class="slist_list_star">--}}
+                                {{--<div id="list_rate01"></div>--}}
+                            {{--</div>--}}
 
-                            <h6 class="mar_10 color_8">51세&nbsp;/&nbsp;2년차</h6>
-                        </div>
-                    </a>
-                </div>
+                            {{--<h6 class="mar_10 color_8">51세&nbsp;/&nbsp;2년차</h6>--}}
+                        {{--</div>--}}
+                    {{--</a>--}}
+                {{--</div>--}}
 
-                <!-- 컨텐츠_02 -->
+                {{--<!-- 컨텐츠_02 -->--}}
 
-                <div class="inline_b position_r shadow_box text_c slist_list">
-                    <a class="color_3" href="../detail">
-                        <div class="slist_list_img">
-                            <img class="shadow_box" title="판매자ID" src="../img/detail/detail_seller_ex02.png">
-                        </div>
+                {{--<div class="inline_b position_r shadow_box text_c slist_list">--}}
+                    {{--<a class="color_3" href="../detail">--}}
+                        {{--<div class="slist_list_img">--}}
+                            {{--<img class="shadow_box" title="판매자ID" src="../img/detail/detail_seller_ex02.png">--}}
+                        {{--</div>--}}
 
-                        <div class="slist_list_box">
-                            <h5><b>마포맘&nbsp;님</b></h5>
+                        {{--<div class="slist_list_box">--}}
+                            {{--<h5><b>마포맘&nbsp;님</b></h5>--}}
 
-                            <div class="slist_list_star">
-                                <div id="list_rate02"></div>
-                            </div>
+                            {{--<div class="slist_list_star">--}}
+                                {{--<div id="list_rate02"></div>--}}
+                            {{--</div>--}}
 
-                            <h6 class="mar_10 color_8">62세&nbsp;/&nbsp;8년차</h6>
-                        </div>
-                    </a>
+                            {{--<h6 class="mar_10 color_8">62세&nbsp;/&nbsp;8년차</h6>--}}
+                        {{--</div>--}}
+                    {{--</a>--}}
 
-                </div>
+                {{--</div>--}}
 
-                <!-- 컨텐츠_03 -->
+                {{--<!-- 컨텐츠_03 -->--}}
 
-                <div class="inline_b position_r shadow_box text_c slist_list">
-                    <a class="color_3" href="../detail">
-                        <div class="slist_list_img">
-                            <img class="shadow_box" title="판매자ID" src="../img/detail/detail_seller_ex01.png">
-                        </div>
+                {{--<div class="inline_b position_r shadow_box text_c slist_list">--}}
+                    {{--<a class="color_3" href="../detail">--}}
+                        {{--<div class="slist_list_img">--}}
+                            {{--<img class="shadow_box" title="판매자ID" src="../img/detail/detail_seller_ex01.png">--}}
+                        {{--</div>--}}
 
-                        <div class="slist_list_box">
-                            <h5><b>서강대맘&nbsp;님</b></h5>
+                        {{--<div class="slist_list_box">--}}
+                            {{--<h5><b>서강대맘&nbsp;님</b></h5>--}}
 
-                            <div class="slist_list_star">
-                                <div id="list_rate03"></div>
-                            </div>
+                            {{--<div class="slist_list_star">--}}
+                                {{--<div id="list_rate03"></div>--}}
+                            {{--</div>--}}
 
-                            <h6 class="mar_10 color_8">31세&nbsp;/&nbsp;1년차</h6>
-                        </div>
-                    </a>
+                            {{--<h6 class="mar_10 color_8">31세&nbsp;/&nbsp;1년차</h6>--}}
+                        {{--</div>--}}
+                    {{--</a>--}}
 
-                </div>
+                {{--</div>--}}
 
 
+            {{--</div>--}}
+
+            <!-- empty -->
+
+            <div class="text_c slist_list_empty">
+            <img title="판매자ID" src="/img/sitter_list/sitter_list_empty.png">
+
+            <h4 class="font_t mar_15">모모님을 찾을 수가 없어요</h4>
+
+            <h5 class="mar_10">
+            <a href="#">다른지역으로 변경하기</a>
+            </h5>
             </div>
         </div>
 
