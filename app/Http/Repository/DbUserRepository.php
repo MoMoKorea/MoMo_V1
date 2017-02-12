@@ -81,4 +81,22 @@ class DbUserRepository {
         return null;
     }
 
+    public function getSitterDetail($sitter_id) {
+
+        $sitter = User::with(['rates', 'locations'])->where('id', $sitter_id)->first();
+
+        // 평가 평점, 갯수
+        $sitter->countRate = $sitter->rates->count();
+        $sitter->avgRate = $sitter->rates->avg('rate');
+
+        // 구글맵 정적 이미지 url
+        $url = 'https://maps.googleapis.com/maps/api/staticmap?key=' . getGoogleApiKey() . '&size=345x150&markers=37.477944,127.127571' ;
+        $url = $url . '&center=37.477944,127.127571';
+        $url = $url . '&zoom=14';
+        $sitter->addrImgUrl = $url ;
+
+//        $sitter->work_days = json_decode($sitter->work_days);
+        return $sitter;
+    }
+
 }

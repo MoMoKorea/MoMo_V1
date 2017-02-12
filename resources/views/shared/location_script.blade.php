@@ -1,4 +1,4 @@
-<script src="js/momo.location.js"></script>
+<script src="/js/momo.location.js"></script>
 
 <script>
 

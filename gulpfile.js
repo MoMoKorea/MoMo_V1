@@ -23,6 +23,7 @@ elixir(function (mix) {
     mix.styles(['about_header.css'], 'public/css/momo_about_style.css');
 
     mix.scripts(['momo.location.vue.js'], 'public/js/momo.location.js')
+    mix.scripts(['momo.sitter_detail.vue.js'], 'public/js/momo.sitter_detail.js')
     mix.scripts(['config.js'], 'public/js/momo.config.js')
     mix.scripts([
         'jquery.min.js',
@@ -38,6 +39,7 @@ elixir(function (mix) {
         'public/js/momo.location.js',
         'public/css/momo_about_style.css',
         'public/js/momo.about.js',
-        'public/css/momo_custom_style.css'
+        'public/css/momo_custom_style.css',
+        'public/js/momo.sitter_detail.js'
     ])
 });

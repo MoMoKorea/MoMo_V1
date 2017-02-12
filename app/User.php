@@ -47,7 +47,6 @@ class User extends Authenticatable
         'social_account_id',
         'mobile_conn_id',
         'mobile_dupl_id',
-        'password',
     ];
 
     /**
@@ -56,6 +55,19 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
+        'password',
         'token',
     ];
+
+
+    public function rates () {
+        return $this->hasMany('App\Rate', 'sitter_id', 'id');
+    }
+
+    public function locations () {
+        return $this->hasOne('App\Location', 'id', 'location');
+    }
+
+
+
 }
