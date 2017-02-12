@@ -817,6 +817,64 @@ a{
     width: 90px;
 }
 
+/* regist */
+
+.regist_square{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    padding: 10px 35px 35px 10px;
+    border: solid #EF6C00 1px;
+}
+
+.regist_title{
+    position: absolute;
+    top: 26px;
+    left: 37px;
+
+    padding: 10px 10px 0px 10px;
+    background-color: #fff;
+}
+
+.regist_contents{
+    padding: 90px 0px 0px 47px;
+}
+
+.regist_contents input{
+    line-height: 25px;
+}
+
+
+.regist_imgupload i{
+    padding: 2px 5px 0px 0px;
+}
+
+.regist_sub h5{
+    position: absolute;
+    top: 9px;
+    left: 0px;
+}
+
+.regist_sub div{
+    margin-left: 60px;
+}
+
+.regist_num{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.regist_num input{
+    width: 40px;
+    text-align: right;
+}
+
+.regist_num_text{
+    padding: 10px 0px 0px 50px;
+}
+
 /* rateyo */
 
 .jq-ry-container {
