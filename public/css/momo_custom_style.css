@@ -143,6 +143,10 @@ a{
     margin-top: 50px;
 }
 
+.mar_80{
+    margin-top: 80px;
+}
+
 .inline_b{
     display:inline-block;
     zoom:1;
@@ -845,6 +849,13 @@ a{
     line-height: 25px;
 }
 
+.regist_contents .checkbox:first-child{
+    margin-top: 0px;
+}
+
+.regist_contents .radio:first-child{
+    margin-top: 0px;
+}
 
 .regist_imgupload i{
     padding: 2px 5px 0px 0px;
@@ -873,6 +884,25 @@ a{
 
 .regist_num_text{
     padding: 10px 0px 0px 50px;
+}
+
+.regist_money{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.regist_money input{
+    width: 150px;
+    text-align: right;
+}
+
+.regist_money_text{
+    padding: 10px 0px 0px 160px;
+}
+
+.regist_320{
+    margin-top: 0px;
 }
 
 /* rateyo */
@@ -918,5 +948,12 @@ a{
     top: 0;
     left: 0;
     overflow: hidden;
+}
+
+
+@media screen and (max-width: 320px) {
+    .regist_320{
+        margin-top: 10px;
+    }
 }
 /*# sourceMappingURL=momo_custom_style.css.map */
