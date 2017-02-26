@@ -817,6 +817,10 @@ a{
     margin: 4px auto 0px auto;
 }
 
+.slist_list_empty{
+    margin-top: 20px;
+}
+
 .slist_list_empty img{
     width: 90px;
 }
