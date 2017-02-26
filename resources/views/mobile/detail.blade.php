@@ -148,15 +148,15 @@
 
             <div class="mar_50"></div>
 
-            <!-- 하단 버튼 -->
-
-            <Button type="button" data-toggle="modal" data-target="#contact">
-                <h4 class="text_c bottom_btn bottom_btn_p">
-                    <b>시터에게 연락하기</b>
-                </h4>
-            </Button>
-
         </div>
+
+        <!-- 하단 버튼 -->
+
+        <Button type="button" data-toggle="modal" data-target="#contact">
+            <h4 class="text_c bottom_btn bottom_btn_p">
+                <b>시터에게 연락하기</b>
+            </h4>
+        </Button>
 
 
         <!-- Modal -->
