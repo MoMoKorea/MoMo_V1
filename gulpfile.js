@@ -15,11 +15,13 @@ require('laravel-elixir-vue-2');
 
 elixir(function (mix) {
 
-    mix.styles(['bootstrap.css',
-        'bootstrap_edit.css',
-        'normalize.css'], 'public/css/momo_style.css');
     mix.styles(['fonts.css'], 'public/css/momo_fonts.css');
     mix.styles(['about_header.css'], 'public/css/momo_about_style.css');
+
+    // mix.styles(['bootstrap.css',
+    //     'bootstrap_edit.css',
+    //     'normalize.css'], 'public/css/momo_style.css');
+
     mix.styles(['style.css'], 'public/css/momo_custom_style.css');
 
     mix.scripts(['momo.location.vue.js'], 'public/js/momo.location.js');

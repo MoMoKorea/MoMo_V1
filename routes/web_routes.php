@@ -28,8 +28,8 @@ Route::get('location', [ 'middleware' => 'check.login', 'uses' => 'Web\MainContr
 Route::post('location', 'Web\MainController@setLocation');
 
 // sitter
-
 Route::get('sitter/{id}', 'Web\SitterController@getSitterDetail')->where('id', '[0-9]+');
+Route::get('sitterRegist', 'Web\SitterController@getSitterRegist');
 
 
 
@@ -62,7 +62,6 @@ Route::group(['prefix' => 'api/v1'], function() {
     Route::get('getApplicationData', ['middleware' => 'auto.login', 'uses' => 'App\ApiController@getApplicationData']);
 });
 
-Route::get('getApplicationData', ['middleware' => 'auto.login', 'uses' => 'App\ApiController@getApplicationData']);
 Route::get('test', function () {
     dd(auth()->check());
     return view('mobile.regist');

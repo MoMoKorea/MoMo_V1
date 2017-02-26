@@ -8,9 +8,9 @@
     <title>MOMO</title>
 
     <!-- custom -->
+    <link href="{{ elixir('/css/momo_style.css') }}" rel="stylesheet">
     <link href="{{ elixir('/css/momo_custom_style.css')}}" rel="stylesheet">
     <link href="/css/momo_fonts.css" rel="stylesheet">
-    <link href="{{ elixir('/css/momo_style.css') }}" rel="stylesheet">
     <link href="/css/font-awesome.css" rel="stylesheet">
 
     <!-- JS -->

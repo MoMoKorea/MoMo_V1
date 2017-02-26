@@ -24,5 +24,10 @@ class SitterController extends Controller
         return view('mobile.detail', compact('sitter'));
     }
 
+    // 시터 등록페이지
+    public function getSitterRegist() {
+        return view('mobile.regist');
+    }
+
 
 }
