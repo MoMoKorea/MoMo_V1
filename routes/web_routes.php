@@ -14,8 +14,7 @@
 use Illuminate\Http\Request;
 
 Route::get('/', ['middleware' => 'check.login', 'uses' => function(Request $request) {
-
-
+    return view('mobile/sitter_list');
 } ]);
 
 Route::get('login', 'Web\AuthController@getLogin');
