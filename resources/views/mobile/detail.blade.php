@@ -97,10 +97,9 @@
                             <div class="color_8">{{ $sitter->countRate }}개의 리뷰</div>
                         </div>
 
-                        <div class="shadow_box mar_15 detail_review_body">
-
-                            @if($sitter->rates)
-                                @foreach($sitter->rates as $index => $rate)
+                        @if($sitter->rates)
+                            @foreach($sitter->rates as $index => $rate)
+                                <div class="shadow_box detail_review_body @if($index > 0) mar_25 @else mar_15 @endif">
                                     <div class="position_r detail_review_buyer">
                                         <div class="detail_review_img">
                                             <img title="구매자ID" src="/img/detail/detail_seller_ex02.png">
@@ -121,28 +120,26 @@
                                         </div>
                                     </div>
 
-
                                     @if($rate->feedback)
-                                    <div class="position_r detail_review_seller">
-                                        <div class="detail_review_img">
-                                            <img title="판매자ID" src="/img/detail/detail_seller_ex01.png">
+                                        <div class="position_r detail_review_seller">
+                                            <div class="detail_review_img">
+                                                <img title="판매자ID" src="/img/detail/detail_seller_ex01.png">
+                                            </div>
+
+                                            <h6 class="color_8 detail_review_right">
+                                                {{ $sitter->username }}&nbsp;님
+                                            </h6>
+
+                                            <div class="detail_review_text">
+                                                {{ $rate->feedback }}
+                                            </div>
                                         </div>
-
-                                        <h6 class="color_8 detail_review_right">
-                                            {{ $sitter->username }}&nbsp;님
-                                        </h6>
-
-                                        <div class="detail_review_text">
-                                            {{ $rate->feedback }}
-                                        </div>
-
-                                    </div>
                                     @endif
-                                @endforeach
-                            @else
-                                {{-- empty --}}
-                            @endif
-                        </div>
+                                </div>
+                            @endforeach
+                        @else
+                            {{-- empty --}}
+                        @endif
                     </div>
                 </div>
             @endif

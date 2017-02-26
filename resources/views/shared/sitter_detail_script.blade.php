@@ -20,8 +20,6 @@
             @endforeach
         @endif
 
-
-
         sitter_detail_vue.id = {{ $sitter->getKey() }};
         sitter_detail_vue.workdays = {!! $sitter->work_days !!};
     })

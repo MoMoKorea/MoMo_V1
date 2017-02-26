@@ -18,13 +18,33 @@ class ApiController extends Controller
         $this->userRepo = $userRepo;
     }
 
-    public function getApplicationJson (Request $request) {
-
-        // 1. 메뉴 버전
-
-        // menu
+    public function getApplicationData(Request $request) {
 
 
+        $user = null;
+        if (auth()->check()) {
+            $user = auth()->user();
+        }
+
+        return json_encode([
+            'status' => 1,
+            'isLogin' => $user ? true : false,
+            'data' => [
+                'user' => $this->getUserData($user),
+            ]
+        ]);
+
+    }
+
+    private function getUserData($user) {
+
+        if (!$user) return null;
+        $userData = [
+            'userId' => $user->id,
+            'username' => $user->username,
+            'token' => $user->api_token,
+        ];
+        return $userData;
     }
 
 

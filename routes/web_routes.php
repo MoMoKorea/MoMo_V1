@@ -11,8 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-});
+use Illuminate\Http\Request;
+
+Route::get('/', ['middleware' => 'check.login', 'uses' => function(Request $request) {
+
+
+} ]);
 
 Route::get('login', 'Web\AuthController@getLogin');
 Route::post('login', 'Web\AuthController@login');
@@ -20,7 +24,7 @@ Route::get('signup', 'Web\AuthController@getSignup');
 Route::post('signup', 'Web\AuthController@signup');
 Route::get('certification', 'Web\AuthController@getCertification');
 Route::get('detail', 'Web\MainController@getDetail');
-Route::get('location', 'Web\MainController@getLocation');
+Route::get('location', [ 'middleware' => 'check.login', 'uses' => 'Web\MainController@getLocation']);
 Route::post('location', 'Web\MainController@setLocation');
 
 // sitter
@@ -54,7 +58,12 @@ Route::group(['prefix' => 'about'], function() {
     });
 });
 
+Route::group(['prefix' => 'api/v1'], function() {
+    Route::get('getApplicationData', ['middleware' => 'auto.login', 'uses' => 'App\ApiController@getApplicationData']);
+});
 
+Route::get('getApplicationData', ['middleware' => 'auto.login', 'uses' => 'App\ApiController@getApplicationData']);
 Route::get('test', function () {
+    dd(auth()->check());
     return view('mobile.regist');
 });

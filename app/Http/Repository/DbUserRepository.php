@@ -2,6 +2,7 @@
 
 use App\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class DbUserRepository {
 
@@ -19,7 +20,13 @@ class DbUserRepository {
             return 'wrong';
         }
 
+
+
         auth()->login($user, true);
+        $user->update([
+            'token' => hash('sha256', Str::random(10), false)
+        ]);
+
     }
 
     public function signup($credential)
@@ -53,22 +60,24 @@ class DbUserRepository {
         $testLat = 37.4782427;
         $testLan = 127.1287351;
 
-        $sitterList = User::where('type', 'SITTER')->first();
+        $sitterList = User::where('type', 'SITTER')->get();
 
         $simpleList = array();
         if ($sitterList
         && count($sitterList) > 0)
         {
-            for ($i = 0; $i < 15; $i++) {
+
+            foreach($sitterList as $sitter) {
 
                 $randPosition = (mt_rand(1, 9) / 2000);
                 $randRate = (mt_rand(1, 5) * 1.1);
 
                 $sitterData = [
-                    'picture_image' => $sitterList->picture_image,
-                    'username' => $sitterList->username,
-                    'age' => $sitterList->age,
-                    'career' => $sitterList->career,
+                    'id' => $sitter->id,
+                    'picture_image' => $sitter->picture_image,
+                    'username' => $sitter->username,
+                    'age' => $sitter->age,
+                    'career' => $sitter->career,
                     'lat' => $testLat + $randPosition,
                     'lan' => $testLan + $randPosition,
                     'rate' => $randRate

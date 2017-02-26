@@ -54,7 +54,7 @@ class CreateUsersTable extends Migration
                 $table->string('social_account_id')->nullable()->comment('소셜 계정 ID');
                 $table->string('mobile_conn_id')->nullable()->comment('소셜 계정 ID');
                 $table->string('mobile_dupl_id')->nullable()->comment('소셜 계정 ID');
-                $table->string('token')->default('')->comment('토큰 key');
+                $table->string('api_token')->nullable()->comment('토큰 key');
                 $table->rememberToken()->comment('로그인 기억 토큰');
                 $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
                 $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP'));

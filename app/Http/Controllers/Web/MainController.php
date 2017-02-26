@@ -31,11 +31,11 @@ class MainController extends Controller {
 
     public function getLocation() {
 
-        if (auth()->check()) {
-            $userid = auth()->user()->id;
-            if (User::where('id', $userid)->first()) {
-                return redirect("/");
-            }
+        $userid = auth()->user()->id;
+        $user = User::where('id', $userid)->first();
+
+        if ($user->location) {
+            return redirect("/");
         }
 
         return view('mobile.location');

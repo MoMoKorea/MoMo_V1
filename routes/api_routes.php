@@ -20,7 +20,7 @@ Route::get('/user', function (Request $request) {
 
 Route::group(['prefix' => 'v1'], function () {
 
-    Route::get('getApplicationJsonData', 'App\ApiController@getApplicationJson');
     Route::get('getMainSitterListData', 'App\ApiController@getMainSitterList');
+//    Route::get('getApplicationData', ['middleware' => 'auth', 'uses' => 'App\ApiController@getApplicationData']);
 
 });

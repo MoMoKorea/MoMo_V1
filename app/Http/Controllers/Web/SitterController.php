@@ -20,15 +20,8 @@ class SitterController extends Controller
 
     // 시터 상세페이지
     public function getSitterDetail ($id) {
-
-
         $sitter = $this->userRepo->getSitterDetail($id);
-
-
-
-
         return view('mobile.detail', compact('sitter'));
-
     }
 
 
