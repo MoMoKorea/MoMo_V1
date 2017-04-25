@@ -21,6 +21,7 @@ class User extends Authenticatable
         'status',
         'type',
         'email',
+        'password',
         'username',
         'fund',
         'withdrawn_profits',
@@ -48,7 +49,6 @@ class User extends Authenticatable
         'mobile_conn_id',
         'mobile_dupl_id',
         'api_token',
-        'password'
     ];
 
     /**
@@ -57,6 +57,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
+        'password',
     ];
 
 
